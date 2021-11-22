@@ -1,24 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+
+
 * {
 	box-sizing: border-box;
+	font-family: 'Shippori Antique', sans-serif;
 }
 
 body {
 	margin: 0;
-}
-
-#main {
 	display: grid;
-	width: 100%;
-	height: 100%;
-	grid-template-columns: 20% 80%;
+	grid-template-columns: 0% 20% 80%;
 }
 
-#nav-bar {
-	background: lightblue;
+#navbar {
+	background: lightgray;
+	text-align: center;
+}
+
+#navbar header {
+	display: block;
+	padding: 20px 0;
+	background: white;
+}
+
+#navbar a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding: 20px 0;
+	transition-duration: .6s;
+	border: 4px solid lightgray;
+}
+
+#navbar a:hover {
+	background-color: white;
+	border: 4px solid gray;
 }
 
 @media only screen and (max-width: 600px) {
-  #nav-bar {
-    display: none;
-  }
+	#navbar {
+		display: none;
+	}
 }
