@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+	grid-template-columns: 20% 80%;
+	margin: 0;
+}
+
+#nav-bar {
+	background: lightblue;
+}
+
+@media only screen and (max-width: 600px) {
+  #nav-bar {
+    display: none;
+  }
+}
